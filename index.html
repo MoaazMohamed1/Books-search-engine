@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرك بحث كتب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>محرك بحث كتب </h1>
+        <div id="popup-icon" onclick="document.getElementById('saved-books-popup').classList.toggle('show');">
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </header>
+    <main>
+        <div id="search-container">
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="ابحث عن كتاب...">
+                <button id="search-button">بحث</button>
+            </div>
+        </div>
+        <h3 class="title">نتائج البحث</h3>
+        <div id="results-container"></div>
+    </main>
+
+    <div id="saved-books-popup" class="popup">
+        <h3>الكتب المحفوظة</h3>
+        <div id="saved-books-container">
+            <p>لا توجد كتب محفوظة.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
